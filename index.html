@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WavePomo</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300&display=swap");
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+
+  <body>
+    <h3 id="overMsg">Time is over</h3>
+    <h1 id="timeString">00 : 00</h1>
+
+    <div class="btn">
+      <button type="button" name="start" id="start">
+        <i class="material-icons"> play_arrow </i>
+      </button>
+      <button type="button" name="stop" id="stop">
+        <i class="material-icons"> stop </i>
+      </button>
+      <button type="button" name="setting" id="setting">
+        <i class="material-icons"> settings </i>
+      </button>
+    </div>
+
+    <div class="popup">
+      <button type="button" value="x" id="exit">
+        <i class="material-icons"> close </i>
+      </button>
+      <br />
+      <form id="setForm" action="" method="post">
+        Time :
+        <input
+          id="time"
+          type="number"
+          name="limit"
+          `
+          value=" 30"
+          size="10"
+          max="60"
+          min="0"
+        />
+        minutes
+        <br />
+        Message :
+        <input
+          id="msg"
+          type="text"
+          name="msg"
+          placeholder=" Text finish message"
+        />
+        <br />
+        <button id="setTime" type="button">save</button>
+      </form>
+
+      <!-- <div class="nav">
+        <h3>Another Feacture</h3>
+        <nav>
+          <li><a>history</a></li>
+          <li><a>community</a></li>
+        </nav>
+      </div> -->
+    </div>
+
+    <section class="background">
+      <section class="waves">
+        <div class="wave w1"></div>
+        <div class="wave w2"></div>
+        <div class="wave w3"></div>
+      </section>
+
+      <div class="goup"></div>
+    </section>
+
+    <script src="/time.js"></script>
+    <script src="/popup.js"></script>
+  </body>
+</html>

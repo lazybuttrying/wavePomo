@@ -1,0 +1,79 @@
+#exit {
+  position: relative;
+  top: 10px;
+  color: #ef2c45;
+  background-color: white;
+  border-style: none;
+  cursor: pointer;
+}
+
+#exit .material-icons {
+  font-size: 48px;
+  background-color: none;
+}
+
+.popup {
+  position: absolute;
+  visibility: hidden;
+  width: 80vmin;
+  max-width: 500px;
+  /* height: 400px; */
+  box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.2);
+  border-radius: 5%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  font-size: x-large;
+}
+
+form {
+  margin: 10px auto;
+  line-height: 200%;
+}
+
+form input {
+  color: #a89295;
+  font-size: large;
+  line-height: 50%;
+  border-radius: 9999em;
+  border: 3px solid #ffbfbf;
+}
+form input:focus {
+  border-color: #ffbfbf;
+}
+
+form input[type="number"] {
+  width: 80px;
+}
+
+#setTime {
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  padding: 5px 10px;
+  margin: 10px;
+  background: #ffbfbf;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 10%;
+}
+/* 
+.nav {
+  border-top: 1px solid rgba(10, 10, 10, 0.2);
+  width: 80%;
+  transform: translateX(13%);
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  float: 2;
+}
+
+nav li {
+  list-style: none;
+  border-bottom: 3px solid #ffbfbf;
+} */
