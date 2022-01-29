@@ -1,0 +1,134 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  font-family: "Red Hat Text", sans-serif;
+  text-align: center;
+}
+
+.background {
+  background-color: #ffbfbf;
+  position: absolute;
+  bottom: -20px;
+  z-index: -10;
+}
+
+.goup {
+  background-color: #ffbfbf;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 0vh;
+  height: 15vh;
+  width: 100vw;
+  z-index: -3;
+}
+
+.waves {
+  position: absolute;
+  width: 100vw;
+  height: 15vh;
+  bottom: 8vh;
+  overflow: hidden;
+  z-index: -5;
+}
+
+.waves .wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200vw;
+  height: 15vh;
+  background: url(wave.png);
+}
+
+.waves .wave.w1 {
+  animation: sway1 20s linear infinite;
+  z-index: 2;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+
+.waves .wave.w2 {
+  animation: sway2 15s linear infinite;
+  z-index: 1;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 3px;
+}
+
+.waves .wave.w3 {
+  animation: sway1 30s linear infinite;
+  z-index: 0;
+  opacity: 0.2;
+  animation-delay: -8s;
+  bottom: -3px;
+}
+
+@keyframes sway1 {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: -2500px;
+  }
+}
+
+@keyframes sway2 {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 2500px;
+  }
+}
+
+#overMsg {
+  visibility: hidden;
+  color: #c54758;
+  font-size: 3em;
+  transform: translateY(50%);
+}
+
+#timeString {
+  margin: 0 auto;
+  color: #c54758;
+  font-size: 8em;
+  transform: translateY(60%);
+}
+
+@media (max-width: 500px) {
+  #timeString {
+    font-size: 5em;
+  }
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(250%);
+  background-color: none;
+}
+
+.material-icons {
+  font-size: 8vmin;
+}
+
+.btn button {
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  padding: -10px;
+  margin: 0 10px 0 10px;
+  background: none;
+  color: #ec6173;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
